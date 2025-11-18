@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:none;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 15px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background:
+        repeating-linear-gradient(
+            to right,
+            #361b35 0px,
+            #361b35 15px,
+            #401c3f 15px,
+            #401c3f 30px,
+            #2b1a37 30px,
+            #2b1a37 45px
+        );
+    background-color: #251530;
+}

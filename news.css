@@ -1,0 +1,215 @@
+/* FONT */
+body {
+    margin: 0;
+    background: #1a0f2b;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* ========= HEADER ========= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    position: sticky;
+    top: 0;
+    background: rgba(10, 0, 20, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #3b66ff;
+}
+
+/* ========= HOME ========= */
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 60px;
+}
+
+.text-box h1 { font-size: 3.2rem; margin: 10px 0; }
+.blue { color: #4b70ff; }
+
+.text-box p {
+    width: 380px;
+    line-height: 1.6;
+}
+
+.socials a {
+    margin-right: 20px;
+    color: #4b70ff;
+    font-size: 1.6rem;
+}
+
+.btn {
+    background: #4b70ff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* CERCLE HERO */
+.hero-circle {
+    width: 260px;
+    height: 260px;
+    background: #244aff;
+    border-radius: 50%;
+    box-shadow: 0 0 60px #2145ff;
+}
+
+/* ========= ABOUT ========= */
+.about {
+    padding: 80px 60px;
+}
+
+.about-box {
+    display: flex;
+    gap: 50px;
+    background: rgba(255,255,255,0.07);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #000;
+}
+
+.about-pic {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #2145ff;
+    border-radius: 50%;
+}
+
+/* ========= SKILLS ========= */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 40px;
+}
+
+.card {
+    width: 160px;
+    background: rgba(255,255,255,0.07);
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #2145ff;
+}
+
+.card i {
+    font-size: 2.5rem;
+}
+
+/* ========= EXPERIENCE ========= */
+.exp-box {
+    width: 280px;
+    margin: auto;
+    background: rgba(255,255,255,.07);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #4b70ff;
+}
+
+/* ========= EDUCATION ========= */
+.education ul {
+    list-style: none;
+    text-align: center;
+}
+
+.education .year {
+    color: #4b70ff;
+    font-weight: bold;
+}
+
+/* ========= SERVICES ========= */
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 40px;
+}
+
+.service-card {
+    width: 220px;
+    padding: 20px;
+    background: #3a2b4b;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #244aff;
+    text-align: center;
+}
+
+/* ========= PROJECTS ========= */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    width: 260px;
+    height: 180px;
+    background: #5a4e6d;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #244aff;
+}
+
+/* ========= CONTACT ========= */
+.contact-box {
+    width: 60%;
+    margin: auto;
+    height: 200px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 12px;
+    box-shadow: 0 0 25px #a300ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons a {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: #fff;
+    transition: .3s;
+}
+
+.icons a:hover {
+    color: #4b70ff;
+}
+
+/* ========= RESPONSIVE ========= */
+@media(max-width: 768px){
+    .home { flex-direction: column; text-align: center; }
+    .hero-circle { margin: 40px auto; }
+
+    .skills-grid, .service-grid, .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
